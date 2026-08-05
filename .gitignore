@@ -1,0 +1,21 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (if you ever add a build step)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python (if you add any tooling)
+__pycache__/
+*.pyc
+
+# Logs
+*.log
