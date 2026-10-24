@@ -1,0 +1,250 @@
+\documentclass[10pt]{article}
+
+% ---------- packages ----------
+\usepackage[a4paper,top=0.6in,bottom=0.6in,left=0.65in,right=0.65in]{geometry}
+\usepackage[sfdefault]{carlito}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+
+% ---------- colors ----------
+\definecolor{navy}{HTML}{1B3A5C}
+\definecolor{darkgray}{HTML}{444444}
+\definecolor{linkblue}{HTML}{14507D}
+\definecolor{rulegray}{HTML}{1B3A5C}
+
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
+
+% ---------- section styling ----------
+\titleformat{\section}
+  {\large\bfseries\color{navy}\MakeUppercase}
+  {}{0em}{}
+\titlespacing{\section}{0pt}{12pt}{2pt}
+\newcommand{\sectionrule}{\vspace{-2pt}\noindent\textcolor{rulegray}{\rule{\linewidth}{1pt}}\vspace{6pt}}
+\newcommand{\hrulefull}[1]{\noindent\textcolor{rulegray}{\rule{\linewidth}{#1}}}
+\newcommand{\cvsection}[1]{%
+  \Needspace{6\baselineskip}%
+  \section{#1}\sectionrule%
+}
+
+% ---------- helper commands ----------
+% \cvitem{Title}{Date}
+\newcommand{\cvitem}[2]{%
+  \Needspace{4\baselineskip}%
+  \par\vspace{6pt}\noindent\textbf{#1}\hfill\textit{\textcolor{darkgray}{#2}}\par\vspace{1pt}%
+}
+% \cvsub{Subtitle line}
+\newcommand{\cvsub}[1]{\textit{\textcolor{darkgray}{#1}}\par\vspace{2pt}}
+% tight bullet list
+\newlist{cvitemize}{itemize}{1}
+\setlist[cvitemize]{leftmargin=16pt, itemsep=1pt, topsep=2pt, parsep=0pt, label=\textbullet}
+
+\setlength{\parindent}{0pt}
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+\RaggedRight
+
+% ================= HEADER =================
+\begin{center}
+  {\fontsize{26}{28}\selectfont\bfseries\color{navy} Md. Zunaid-Ul-Alam}\\[4pt]
+  {\small Dhaka, Bangladesh \; $|$ \; zunaidulalam@iut-dhaka.edu \; $|$ \; +880 1798-080786}\\[2pt]
+  {\small Portfolio: \href{https://zunaid13.github.io/Portfolio/}{zunaid13.github.io/Portfolio} \; $|$ \;
+  GitHub: \href{https://github.com/zunaid13}{zunaid13} \; $|$ \;
+  Codeforces: \href{https://codeforces.com/profile/zunaid13}{zunaid13}}\\[4pt]
+  {\small\itshape\color{darkgray} Research interests: Large Language Models $\cdot$ Retrieval-Augmented Generation $\cdot$ Knowledge Graphs $\cdot$ GraphRAG $\cdot$ Parameter-Efficient Fine-Tuning $\cdot$ NLP}
+\end{center}
+\vspace{-2pt}
+\hrulefull{1.2pt}
+\vspace{2pt}
+
+% ================= EDUCATION =================
+\cvsection{Education}
+
+\cvitem{B.Sc. in Computer Science and Engineering}{Jun 2021 -- Oct 2025}
+\cvsub{\href{https://www.iutoic-dhaka.edu/}{Islamic University of Technology (IUT)} $\cdot$ Gazipur, Bangladesh}
+CGPA: 3.96 / 4.00. Coursework: algorithms, machine learning, software engineering, databases, and systems.
+
+\cvitem{Higher Secondary Certificate --- Science}{2018 -- 2020}
+\cvsub{\href{https://www.noormohammadcollege.ac.bd/}{Birshreshtha Noor Mohammad Public College (BNMPC)} $\cdot$ Dhanmondi, Dhaka}
+GPA: 5.00 / 5.00
+
+\cvitem{Secondary School Certificate --- Science}{2016 -- 2018}
+\cvsub{\href{https://www.noormohammadcollege.ac.bd/}{Birshreshtha Noor Mohammad Public College (BNMPC)} $\cdot$ Dhanmondi, Dhaka}
+GPA: 5.00 / 5.00
+
+% ================= RESEARCH =================
+\cvsection{Research Experience}
+
+\cvitem{\href{https://zunaid13.github.io/Portfolio/assets/narrativewiki-paper.pdf}{NarrativeWiki}}{Under Review $\cdot$ 2026}
+\cvsub{``NarrativeWiki: Probing the Trade-offs of Decomposition in Graph-Built Character Wikis at Reader-Selected Narrative \mbox{Cutoffs}''}
+\cvsub{\textbf{Md. Zunaid-Ul-Alam}, Syed Rifat Raiyan $\cdot$ \href{https://zunaid13.github.io/Portfolio/assets/narrativewiki-paper.pdf}{Paper (PDF)} $\cdot$ \href{https://github.com/zunaid13/narrativewiki}{Code}}
+\begin{cvitemize}
+  \item Built NarrativeWiki, which decomposes a novel series into a graph of evidence-backed claims dated by volume and filters it at the reader's chosen cutoff before generating a spoiler-safe, linked character wiki.
+  \item Evaluated it against six systems at every cutoff of a five-volume series (111 gold facts), with a renamed-and-paraphrased text control: closed-book recall fell from 0.683 to 0.003, while systems given the text lost at most 0.070.
+  \item Showed that the design trades context for accumulation: it best covers the most-documented characters and loses one fact across cutoffs (other systems: 4--24), but stored claims lose speaker, modality and scene context.
+\end{cvitemize}
+
+\cvitem{\href{https://github.com/zunaid13/Thesis-Chat-Counsellor/tree/main}{Benchmarking Psychotherapy Datasets Using RAG and LoRA}}{Dec 2024 -- Sept 2025}
+\cvsub{Undergraduate Thesis $\cdot$ Islamic University of Technology}
+\begin{cvitemize}
+  \item Explored Retrieval-Augmented Generation (RAG) and Low-Rank Adaptation (LoRA) to improve LLM-based dialogue generation for psychological-therapy contexts.
+  \item Used an LLM-as-a-judge framework to evaluate response quality across multiple therapy datasets.
+\end{cvitemize}
+
+% ================= TEACHING =================
+\cvsection{Academic \& Teaching Experience}
+
+\cvitem{Lecturer}{Nov 2025 -- Present}
+\cvsub{\href{https://www.uiu.ac.bd/}{United International University (UIU)} $\cdot$ Dhaka, Bangladesh}
+\begin{cvitemize}
+  \item Teaching Data Structures \& Algorithms II (DSA2), Object-Oriented Programming (OOP), and Artificial Intelligence (AI).
+  \item Serving as competitive programming trainer, mentoring students for national and international contests including IUPC (Inter-University Programming Contest) and ICPC (International Collegiate Programming Contest).
+\end{cvitemize}
+
+\cvitem{Mentor \& Trainer, UIU Programming Community}{Oct 2025 -- Present}
+\cvsub{\href{https://www.uiu.ac.bd/}{United International University}}
+\begin{cvitemize}
+  \item Instruct weekly classes for advanced teams competing in IUPC and ICPC.
+  \item Run additional sessions as needed; teach data structures and algorithms across problem types, including applied/real-world-oriented problems.
+\end{cvitemize}
+
+\cvitem{Mentor, Judge \& Problem Setter, IUT Programming Community}{Jun 2022 -- Oct 2025}
+\cvsub{\href{https://www.iutoic-dhaka.edu/}{Islamic University of Technology}}
+\begin{cvitemize}
+  \item Instructed weekly classes for 60+ freshmen and sophomores on competitive programming and problem-solving.
+  \item Served as judge, tester, and problem setter for internal contests.
+  \item Competed in 15+ national-level team contests representing IUT.
+\end{cvitemize}
+
+% ================= OTHER EXPERIENCE =================
+\cvsection{Other Professional Experience}
+
+\cvitem{Game Developer Intern}{Jun 2--28, 2024}
+\cvsub{\href{https://batterylowinteractive.com/}{Battery Low Interactive} $\cdot$ Baridhara, Dhaka, Bangladesh}
+\begin{cvitemize}
+  \item Completed industrial training in Unity and C\#, building 2D/3D games in teams of 2--3.
+  \item Gained hands-on experience with gameplay mechanics (scoring, collisions, camera), level design, UI, and basic AR/VR.
+  \item Collaborated on a shared development PC and wrote clear, well-documented code for maintainability.
+\end{cvitemize}
+
+% ================= PROJECTS =================
+\cvsection{Selected Projects}
+
+\cvitem{\href{https://github.com/zunaid13/Automated-Ollama-Based-Script-Checker}{AutoGrader}}{2026}
+\cvsub{Python, Ollama API}
+Automated grading tool that calls the Ollama API to evaluate student submissions in \texttt{.cpp} or \texttt{.pdf} format. Feeds the question, reference solution, and marking rubric to the model to produce total marks with a per-mark rationale; normalizes varied submission formats via cleaning, flattening, and renaming.
+
+\cvitem{\href{https://github.com/abeshahsan/voice_reminder}{VoiceMind}}{2025}
+\cvsub{Dart, Flutter, BLoC, SQLite, Python, Rasa NLU}
+Mobile app for setting reminders via voice commands, using speech recognition and NLU to extract intent and schedule reminders, with manual entry as a fallback.
+
+\cvitem{\href{https://github.com/abeshahsan/Sign-Tutor-AI}{SignBoss}}{2025}
+\cvsub{Python, Jupyter Notebook}
+Desktop app that reads a real-time camera feed to detect and classify sign language (e.g., ASL), helping learners progressively improve at reading signs.
+
+\cvitem{\href{https://github.com/zunaid13/ChatBot}{NeuroBot}}{2025}
+\cvsub{Python, PyTorch}
+Desktop chatbot built on a feedforward neural network, using tokenization and a Bag-of-Words model; trained on a small, easily updatable dataset.
+
+\cvitem{\href{https://github.com/Inzamam20/TuneCraft}{Virtual-Piano}}{2024}
+\cvsub{Java, JavaFX}
+Desktop music application with customizable tuning key frequencies, recording, global chat, custom keybinds, and an interactive game teaching basic music concepts.
+
+\cvitem{\href{https://github.com/ZincSulphide/Coffee/tree/master}{CafeSync}}{2024}
+\cvsub{Dart, Flutter}
+Android app for inventory, menu, and order management with role-based admin/user logins and customer reviews.
+
+\cvitem{\href{https://github.com/zunaid13/Web-Quiz-Task-Management-System}{Task Management System}}{2023}
+\cvsub{React, Node.js, HTML, CSS}
+Web app for creating, prioritizing, and organizing tasks by category and due date, with search, filtering, completion tracking, and detailed views.
+
+\cvitem{\href{https://github.com/Inzamam20/Libello}{Libello}}{2023}
+\cvsub{C}
+Personal organizer combining a digital diary, to-do list, and encrypted password manager, with user/admin login, progress tracking, and theming.
+
+% ================= SKILLS =================
+\cvsection{Technical Skills}
+
+\textbf{Languages:} C, C++, Java, JavaScript, Dart, Python, C\#, Bash, LaTeX, HTML, CSS\\
+\textbf{Frameworks \& Libraries:} Flutter, Node.js, React, Express, JavaFX, PyTorch, NumPy, pandas, Bootstrap, Keras\\
+\textbf{Tools \& Technologies:} Git, Linux (Ubuntu), Docker, Jupyter Notebook, Unity, MySQL, MongoDB, Oracle, AutoCAD, Proteus, MS Office\\
+\textbf{Operating Systems:} Linux (Ubuntu), Windows
+
+% ================= COMPETITIVE PROGRAMMING =================
+\cvsection{Competitive Programming}
+
+\href{https://codeforces.com/profile/ThisWasUnplanned}{Codeforces Master (peak rating 2106)} $\cdot$ \href{https://www.codechef.com/users/zunaid13}{CodeChef 5$\star$ (peak rating 2060)} $\cdot$ \textasciitilde2,000 problems solved across online judges $\cdot$ Consistently ranks in the top 3--5\% of Codeforces rounds.
+
+\textbf{Selected highlights}
+\begin{cvitemize}
+  \item 3rd / 132 teams --- \href{https://toph.co/c/cuet-iupc-2025/standings}{CUET Inter-University Programming Contest 2025}
+  \item 1st / 43 teams --- \href{https://toph.co/c/codeclash-oscillon-2025/standings}{AUST CodeClash --- Oscillon 2025}
+  \item 2nd / 50 teams --- \href{https://toph.co/c/preliminary-8th-drmc-intl-tech-carnival-2025/standings}{8th DRMC Tech Carnival 2025 (Onsite)}
+  \item 15th / 2{,}481 teams --- \href{https://icpc.global/regionals/finder/Dhaka-Preliminary-2024/standings}{ICPC Dhaka Regional 2025 (Preliminary)}
+  \item 59th / 307 teams --- \href{https://icpc.global/regionals/finder/Dhaka-2025/standings}{ICPC Dhaka Regional 2025 (Onsite)}
+  \item Top 10\% --- \href{https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1519485338929641}{Meta HackerCup 2024 (Round 1)}
+  \item Top 10\% --- \href{https://www.hackerrank.com/contests/srbd-code-contest-2024-round-1/leaderboard}{Samsung SRBD Code Contest 2024 (Rounds 1 \& 2)}
+\end{cvitemize}
+
+\vspace{4pt}
+\textbf{Full contest log}
+\vspace{2pt}
+
+{\small
+\begin{longtable}{@{}p{7.6cm} c c c l@{}}
+\toprule
+\textbf{Contest} & \textbf{Year} & \textbf{Rank} & \textbf{Field} & \textbf{Note} \\
+\midrule
+\endhead
+\href{https://toph.co/c/cuet-iupc-2025/standings}{CUET Inter-University Programming Contest} & 2025 & 3rd & 132 & \\
+\href{https://toph.co/c/inter-university-mu-cse-fest-2025/standings}{MU Inter-University Programming Contest} & 2025 & 5th & 100 & \\
+\href{https://toph.co/contests/training/teukrhr/standings}{Intra First Year Programming Competition (IUT)} & 2021 & 1st & 39 & \\
+\href{https://toph.co/c/uttara-university-inter-university-2025/standings}{UU Inter-University Programming Contest} & 2025 & 4th & 123 & \\
+\href{https://toph.co/c/duet-inter-university-iupc-2025/standings}{DUET Inter-University Programming Contest} & 2025 & 4th & 138 & \\
+\href{https://bapsoj.org/contests/uiu-inter-university-programming-contest-2025/standings}{UIU Inter-University Programming Contest} & 2025 & 12th & 160 & \\
+\href{https://toph.co/c/mtb-presents-aust-inter-university-2025/standings}{AUST Inter-University Programming Contest} & 2025 & 13th & 130 & \\
+\href{https://cse.iutoic-dhaka.edu/news/coderush-1-0}{Intra IUT Programming Contest --- CodeRush} & 2022 & 4th & 24 & \\
+\href{https://toph.co/c/codeclash-oscillon-2025/standings}{AUST CodeClash --- Oscillon} & 2025 & 1st & 43 & \\
+\href{https://toph.co/c/preliminary-8th-drmc-intl-tech-carnival-2025/standings}{8th DRMC Tech Carnival (Preliminaries)} & 2025 & 9th & 134 & \\
+\href{https://toph.co/c/preliminary-8th-drmc-intl-tech-carnival-2025/standings}{8th DRMC Tech Carnival (Onsite)} & 2025 & 2nd & 50 & \\
+\href{https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1519485338929641}{Meta HackerCup (Round 1)} & 2024 & 2{,}158 & 22{,}494 & Top 10\% \\
+\href{https://www.facebook.com/codingcompetitions/hacker-cup/2024/certificate/1519485338929641}{Meta HackerCup (Round 2)} & 2024 & 1{,}727 & 5{,}000 & Top 35\% \\
+\href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/1519485338929641?source=facebook}{Meta HackerCup (Round 1)} & 2025 & 2{,}989 & 13{,}779 & \\
+\href{https://www.hackerrank.com/contests/srbd-code-contest-2024-round-1/leaderboard}{Samsung SRBD Code Contest (Round 1)} & 2024 & 74th & 1{,}167 & Top 10\% \\
+\href{https://www.hackerrank.com/contests/srbd-code-contest-2024-round-2/leaderboard}{Samsung SRBD Code Contest (Round 2)} & 2024 & 21st & 284 & Top 10\% \\
+\href{https://www.hackerrank.com/contests/srbd-code-contest-2023-round-1/leaderboard}{Samsung SRBD Code Contest (Round 1)} & 2023 & 240th & 1{,}014 &  \\
+\href{https://www.hackerrank.com/contests/srbd-code-contest-2023-round-2/leaderboard}{Samsung SRBD Code Contest (Round 2)} & 2023 & 35th & 246 & Qualified for finals \\
+\href{https://toph.co/c/sust-inter-university-2023/standings}{Cefalo SUST Inter-University Programming Contest} & 2023 & 51st & 121 & \\
+\href{https://toph.co/c/buet-inter-university-2022/standings}{BUET Inter-University Programming Contest} & 2022 & 40th & 117 & \\
+\href{https://bapsoj.org/contests/miaki-presents-kuet-iupc-onsite-2025/standings}{Bitfest KUET Inter-University Programming Contest} & 2022 & 23rd & 160 & \\
+\href{https://toph.co/c/cuet-inter-university-codestorm-1-0/standings}{Codestorm CUET Inter-University Programming Contest} & 2024 & 25th & 100 & \\
+\href{https://icpc.global/regionals/finder/Dhaka-Preliminary-2024/standings}{ICPC Dhaka Regional (Preliminaries)} & 2025 & 15th & 2{,}481 & \\
+\href{https://icpc.global/regionals/finder/Dhaka-2025/standings}{ICPC Dhaka Regional (Onsite)} & 2025 & 59th & 307 & \\
+\href{https://bapsoj.org/contests/icpc-preliminary-dhaka-site-2024/standings}{ICPC Dhaka Regional (Preliminaries)} & 2024 & 31st & 2{,}489 & \\
+\href{https://icpc.global/regionals/finder/Dhaka-2024/standings}{ICPC Dhaka Regional (Onsite)} & 2024 & 48th & 223 & \\
+\href{https://bapsoj.org/contests/icpc-preliminary-dhaka-site-2024/standings}{ICPC Dhaka Regional (Preliminaries)} & 2023 & 132nd & 2{,}480 & \\
+\href{https://bapsoj.org/contests/icpc-dhaka-regional-site-2023/standings}{ICPC Dhaka Regional (Onsite)} & 2023 & 50th & 225 & \\
+\bottomrule
+\end{longtable}
+}
+
+% ================= HONORS =================
+\cvsection{Honors, Awards \& Scholarships}
+
+\cvitem{JSC Scholarship --- Government of Bangladesh}{}
+\cvsub{\href{https://www.noormohammadcollege.ac.bd/}{Birshreshtha Noor Mohammad Public College (BNMPC)}}
+Awarded the Junior School Certificate (JSC) scholarship based on academic merit.
+
+\cvitem{IEEE Cybersecurity Workshop --- CTF Super League}{}
+\cvsub{Department of Computer Science, BUET}
+Participant in a \href{https://drive.google.com/file/d/1l-XHQ-Q6xGNV-Jd1EeN1mTSHXqQFOaqH/view?usp=sharing}{cybersecurity capture-the-flag workshop} hosted by CS-BUET.
+
+\end{document}
