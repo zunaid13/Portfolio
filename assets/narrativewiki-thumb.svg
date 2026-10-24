@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 435" width="100%" height="100%" font-family="Inter, -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0E9AA7" />
+    </marker>
+    <marker id="arrow-magenta" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D81B60" />
+    </marker>
+  </defs>
+
+  <!-- Pure White Background -->
+  <rect width="1120" height="435" fill="#FFFFFF" />
+
+  <!-- ===================================================================== -->
+  <!-- PANEL (a): LEFT - THE FILTER-BEFORE-GENERATE PROBE (x: 10 to 385)     -->
+  <!-- ===================================================================== -->
+  <rect x="10" y="10" width="375" height="415" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+  <text x="22" y="31" font-size="13" font-weight="700" fill="#1E293B">(a) Filter-Before-Generate Probe at Cutoff t = 2</text>
+
+  <!-- Volume Header Pills -->
+  <g transform="translate(105, 42)" font-size="10" font-weight="700" fill="#334155" text-anchor="middle">
+    <rect x="0" y="0" width="48" height="22" rx="3" fill="#F1F5F9" stroke="#94A3B8" />
+    <text x="24" y="15">Vol. 1</text>
+    <rect x="54" y="0" width="48" height="22" rx="3" fill="#F1F5F9" stroke="#94A3B8" />
+    <text x="78" y="15">Vol. 2</text>
+    <rect x="108" y="0" width="48" height="22" rx="3" fill="#F1F5F9" stroke="#94A3B8" />
+    <text x="132" y="15">Vol. 3</text>
+    <rect x="162" y="0" width="48" height="22" rx="3" fill="#F1F5F9" stroke="#94A3B8" />
+    <text x="186" y="15">Vol. 4</text>
+    <rect x="216" y="0" width="48" height="22" rx="3" fill="#F1F5F9" stroke="#94A3B8" />
+    <text x="240" y="15">Vol. 5</text>
+  </g>
+
+  <!-- Shaded Future Zone (Vol 3-5) -->
+  <rect x="210" y="68" width="160" height="114" fill="#FCE4EC" fill-opacity="0.55" />
+
+  <!-- Interval Bars (Anne Shirley <-> Gilbert Blythe) -->
+  <g font-family="&#39;JetBrains Mono&#39;, Consolas, monospace" font-size="9.5" font-weight="700">
+    <text x="98" y="86" text-anchor="end" fill="#475569">ENEMY_OF</text>
+    <rect x="105" y="74" width="48" height="17" rx="2" fill="#E2E8F0" stroke="#64748B" />
+    <text x="129" y="86" text-anchor="middle" fill="#334155" font-size="8.5">[v1, v1]</text>
+
+    <text x="98" y="113" text-anchor="end" fill="#0E9AA7">RIVAL_OF</text>
+    <rect x="105" y="101" width="102" height="17" rx="2" fill="#E0F7FA" stroke="#0E9AA7" stroke-width="1.5" />
+    <text x="156" y="113" text-anchor="middle" fill="#006064" font-size="8.5">[v1, <=2) open</text>
+    <line x1="212" y1="109.5" x2="365" y2="109.5" stroke="#0E9AA7" stroke-width="3" stroke-dasharray="3,3" stroke-opacity="0.45" />
+
+    <text x="98" y="140" text-anchor="end" fill="#0E9AA7">COMRADE_OF</text>
+    <rect x="159" y="128" width="48" height="17" rx="2" fill="#E0F7FA" stroke="#0E9AA7" stroke-width="1.5" />
+    <text x="183" y="140" text-anchor="middle" fill="#006064" font-size="8.5">[v2, <=2)</text>
+    <line x1="212" y1="136.5" x2="365" y2="136.5" stroke="#0E9AA7" stroke-width="3" stroke-dasharray="3,3" stroke-opacity="0.45" />
+
+    <text x="98" y="167" text-anchor="end" fill="#D81B60">SPOUSE_OF</text>
+    <rect x="267" y="155" width="102" height="17" rx="2" fill="#FCE4EC" stroke="#D81B60" stroke-width="1.2" stroke-dasharray="3,2" />
+    <text x="318" y="167" text-anchor="middle" fill="#AD1457" font-size="8.5">[v4, -) withheld</text>
+  </g>
+
+  <!-- Reader Cutoff Vertical Line -->
+  <line x1="210" y1="40" x2="210" y2="188" stroke="#D81B60" stroke-width="2.2" stroke-dasharray="5,3" />
+  <rect x="156" y="183" width="108" height="16" rx="3" fill="#D81B60" />
+  <text x="210" y="194" text-anchor="middle" fill="#FFFFFF" font-size="9.5" font-weight="700">Reader Cutoff t = 2</text>
+
+  <!-- Rendered Cutoff-2 Wiki Card -->
+  <rect x="22" y="207" width="351" height="92" rx="4" fill="#F0FDFA" stroke="#0E9AA7" stroke-width="1.5" />
+  <text x="32" y="223" font-size="11" font-weight="700" fill="#006064">Delivered Cutoff-2 Page (W2): Anne Shirley</text>
+  <text x="32" y="239" font-size="9.5" fill="#1E293B" font-family="monospace">✓ Rival of Gilbert (since v1) [v01:c17:p0036]</text>
+  <text x="32" y="254" font-size="9.5" fill="#1E293B" font-family="monospace">✓ Comrade of Gilbert (since v2) [v02:c01:p0055]</text>
+  <text x="32" y="269" font-size="9.5" fill="#475569" font-family="monospace">✓ Previously: Enemy of (until v1) [v01:c15:p0051]</text>
+  <text x="32" y="288" font-size="9.5" font-weight="700" fill="#D81B60">✗ Vol. 4 marriage blocked; <tspan fill="#6A1B9A">6,970 distinct assertions/cutoff (3.8x B1)</tspan></text>
+
+  <!-- Three Failure Channels Card -->
+  <rect x="22" y="308" width="351" height="106" rx="4" fill="#FFF1F2" stroke="#F43F5E" stroke-width="1.2" />
+  <text x="32" y="324" font-size="11" font-weight="700" fill="#9F1239">Three Costs of Decomposition Exposed by the Probe:</text>
+  <text x="32" y="341" font-size="9.5" fill="#1E293B"><tspan font-weight="700" fill="#BE123C">1. Modality Collapse (§6.2):</tspan> Neighbor's Vol. 2 wedding prediction</text>
+  <text x="42" y="354" font-size="9.5" fill="#475569">stored as <tspan font-family="monospace">presumed</tspan> (vol=2 <= t) renders as <tspan font-weight="700">Spouse of</tspan> at t=2,3 (<tspan font-weight="700" fill="#BE123C">4/220</tspan> leaks).</text>
+  <text x="32" y="371" font-size="9.5" fill="#1E293B"><tspan font-weight="700" fill="#BE123C">2. Pair Context Collapse (§6.4):</tspan> Chapter scenes placed on non-sharing</text>
+  <text x="42" y="384" font-size="9.5" fill="#475569">pairs drop precision from <tspan font-weight="700">97.1%</tspan> (statements) to <tspan font-weight="700" fill="#BE123C">70.6%</tspan> (page context).</text>
+  <text x="32" y="401" font-size="9.5" fill="#1E293B"><tspan font-weight="700" fill="#BE123C">3. Identity Drift (§6.5):</tspan> 5-vol entity merges alter <tspan font-weight="700" fill="#BE123C">39.0%</tspan> (23/59) of t=1 pages.</text>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL (b): TOP MIDDLE - TREATED CONTROL DUMBBELL (x: 398 to 748)      -->
+  <!-- ===================================================================== -->
+  <rect x="398" y="10" width="350" height="205" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+  <text x="410" y="31" font-size="13" font-weight="700" fill="#1E293B">(b) RQ1 & RQ2: Renamed + Paraphrased Control</text>
+  <text x="410" y="47" font-size="10" fill="#64748B">Mean gold recall (t = 1..5): Original (open) → Treated (filled)</text>
+  <text x="736" y="47" font-size="10" font-weight="700" fill="#1E293B" text-anchor="end">Shift</text>
+
+  <!-- Dumbbell Axis (x: 500 = 0.0, 680 = 1.0 -> 180px per 1.0) -->
+  <line x1="500" y1="158" x2="680" y2="158" stroke="#94A3B8" stroke-width="1" />
+  <text x="500" y="171" font-size="9" fill="#64748B" text-anchor="middle">0.0</text>
+  <text x="590" y="171" font-size="9" fill="#64748B" text-anchor="middle">0.50</text>
+  <text x="680" y="171" font-size="9" fill="#64748B" text-anchor="middle">1.00</text>
+
+  <!-- Row 1: B5 NarrativeWiki (0.802 -> 0.843, +0.041) -->
+  <text x="492" y="69" font-size="10" font-weight="700" fill="#0E9AA7" text-anchor="end">B5 NarrativeWiki</text>
+  <line x1="644.4" y1="65" x2="651.7" y2="65" stroke="#0E9AA7" stroke-width="3" />
+  <circle cx="644.4" cy="65" r="4" fill="#FFFFFF" stroke="#0E9AA7" stroke-width="2" />
+  <circle cx="651.7" cy="65" r="4.5" fill="#0E9AA7" />
+  <text x="736" y="69" font-size="10" font-weight="700" fill="#0E9AA7" text-anchor="end">+0.041</text>
+
+  <!-- Row 2: B1 Long context (0.848 -> 0.845, -0.003) -->
+  <text x="492" y="91" font-size="10" fill="#1E293B" text-anchor="end">B1 Long context</text>
+  <line x1="652.1" y1="87" x2="652.6" y2="87" stroke="#1A73E8" stroke-width="2" />
+  <circle cx="652.6" cy="87" r="4" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <circle cx="652.1" cy="87" r="4" fill="#1A73E8" />
+  <text x="736" y="91" font-size="10" fill="#64748B" text-anchor="end">-0.003</text>
+
+  <!-- Row 3: B2 Prefix retrieval (0.834 -> 0.784, -0.050) -->
+  <text x="492" y="113" font-size="10" fill="#1E293B" text-anchor="end">B2 Retrieval</text>
+  <line x1="641.1" y1="109" x2="650.1" y2="109" stroke="#64748B" stroke-width="2" />
+  <circle cx="650.1" cy="109" r="3.8" fill="#FFFFFF" stroke="#64748B" stroke-width="1.8" />
+  <circle cx="641.1" cy="109" r="3.8" fill="#64748B" />
+  <text x="736" y="113" font-size="10" fill="#64748B" text-anchor="end">-0.050</text>
+
+  <!-- Row 4: B4 Graph baseline (0.761 -> 0.704, -0.057) -->
+  <text x="492" y="135" font-size="10" fill="#1E293B" text-anchor="end">B4 Graph base.</text>
+  <line x1="626.7" y1="131" x2="637.0" y2="131" stroke="#6A1B9A" stroke-width="2" />
+  <circle cx="637.0" cy="131" r="3.8" fill="#FFFFFF" stroke="#6A1B9A" stroke-width="1.8" />
+  <circle cx="626.7" cy="131" r="3.8" fill="#6A1B9A" />
+  <text x="736" y="135" font-size="10" fill="#64748B" text-anchor="end">-0.057</text>
+
+  <!-- Row 5: X1 Closed book (0.683 -> 0.003, -0.680) -->
+  <text x="492" y="153" font-size="10" font-weight="700" fill="#D81B60" text-anchor="end">X1 Closed book</text>
+  <line x1="622.9" y1="149" x2="508.0" y2="149" stroke="#D81B60" stroke-width="2.5" marker-end="url(#arrow-magenta)" />
+  <circle cx="622.9" cy="149" r="4" fill="#FFFFFF" stroke="#D81B60" stroke-width="2" />
+  <circle cx="500.5" cy="149" r="4.5" fill="#D81B60" />
+  <text x="736" y="153" font-size="10" font-weight="700" fill="#D81B60" text-anchor="end">-0.680</text>
+
+  <!-- Callout Box at Bottom of Panel (b) -->
+  <rect x="408" y="177" width="330" height="31" rx="3" fill="#F3E8FF" stroke="#9333EA" stroke-width="1" />
+  <text x="415" y="190" font-size="9.2" fill="#1E293B"><tspan font-weight="700" fill="#6B21A8">What Original Text Hides:</tspan> Prompt-rule (<tspan font-family="monospace">X2</tspan>) spoilers jump <tspan font-weight="700" fill="#D81B60">8/220 → 23/220</tspan></text>
+  <text x="415" y="202" font-size="9.2" fill="#1E293B">on treated text (17/88 unique); <tspan font-family="monospace">B1</tspan> citations fall <tspan font-weight="700" fill="#D81B60">.875 → .300</tspan> at t=4.</text>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL (c): TOP RIGHT - ACCUMULATION VS REWRITE DECAY (x: 760 to 1110) -->
+  <!-- ===================================================================== -->
+  <rect x="760" y="10" width="350" height="205" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+  <text x="772" y="31" font-size="13" font-weight="700" fill="#1E293B">(c) RQ3: Accumulation vs. Budgeted Rewrites</text>
+  <text x="772" y="47" font-size="10" fill="#64748B">Central-3 recall on treated text (Anne, Gilbert, Diana; 141 checks)</text>
+
+  <!-- Line Chart Axes: x = 810 (t=1), 870 (t=2), 930 (t=3), 990 (t=4), 1050 (t=5) -->
+  <!-- y: 1.00 -> 62, 0.80 -> 102, 0.60 -> 142 (2px per 1%) -->
+  <line x1="800" y1="62" x2="1065" y2="62" stroke="#E2E8F0" stroke-dasharray="2,2" />
+  <line x1="800" y1="102" x2="1065" y2="102" stroke="#E2E8F0" stroke-dasharray="2,2" />
+  <line x1="800" y1="142" x2="1065" y2="142" stroke="#E2E8F0" stroke-dasharray="2,2" />
+  <line x1="800" y1="56" x2="800" y2="156" stroke="#94A3B8" />
+  <line x1="800" y1="156" x2="1065" y2="156" stroke="#94A3B8" />
+
+  <text x="795" y="65" font-size="9" fill="#64748B" text-anchor="end">1.00</text>
+  <text x="795" y="105" font-size="9" fill="#64748B" text-anchor="end">0.80</text>
+  <text x="795" y="145" font-size="9" fill="#64748B" text-anchor="end">0.60</text>
+
+  <text x="815" y="169" font-size="9" fill="#475569" text-anchor="middle">t=1</text>
+  <text x="872" y="169" font-size="9" fill="#475569" text-anchor="middle">t=2</text>
+  <text x="930" y="169" font-size="9" fill="#475569" text-anchor="middle">t=3</text>
+  <text x="988" y="169" font-size="9" fill="#475569" text-anchor="middle">t=4</text>
+  <text x="1045" y="169" font-size="9" fill="#475569" text-anchor="middle">t=5</text>
+
+  <!-- B4 Graph Baseline (1-call): .643 (133.4), .524 (155), .677 (126.6), .568 (148.4), .632 (135.6) -->
+  <polyline fill="none" stroke="#9575CD" stroke-width="1.6" stroke-dasharray="2,2" points="815,133.4 872,155.0 930,126.6 988,148.4 1045,135.6" />
+  <text x="1050" y="139" font-size="8.5" fill="#6A1B9A">B4 (.610)</text>
+
+  <!-- B2 Retrieval: .857 (90.6), .667 (128.6), .613 (139.4), .622 (137.6), .684 (125.2) -->
+  <polyline fill="none" stroke="#94A3B8" stroke-width="1.6" stroke-dasharray="4,2" points="815,90.6 872,128.6 930,139.4 988,137.6 1045,125.2" />
+  <text x="1050" y="126" font-size="8.5" fill="#64748B">B2 (.667)</text>
+
+  <!-- B1 Long Context: 1.000 (62.0), .905 (81.0), .742 (113.6), .730 (116.0), .763 (109.4) -->
+  <polyline fill="none" stroke="#1A73E8" stroke-width="2.2" points="815,62.0 872,81.0 930,113.6 988,116.0 1045,109.4" />
+  <circle cx="815" cy="62.0" r="3.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <circle cx="872" cy="81.0" r="3.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <circle cx="930" cy="113.6" r="3.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <circle cx="988" cy="116.0" r="3.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <circle cx="1045" cy="109.4" r="3.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.8" />
+  <text x="1050" y="111" font-size="9" font-weight="700" fill="#1A73E8">B1 (.794)</text>
+
+  <!-- B5 NarrativeWiki: .857 (90.6), .905 (81.0), .935 (75.0), .946 (72.8), .947 (72.6) -->
+  <polyline fill="none" stroke="#0E9AA7" stroke-width="3" points="815,90.6 872,81.0 930,75.0 988,72.8 1045,72.6" />
+  <circle cx="815" cy="90.6" r="4" fill="#0E9AA7" />
+  <circle cx="872" cy="81.0" r="4" fill="#0E9AA7" />
+  <circle cx="930" cy="75.0" r="4" fill="#0E9AA7" />
+  <circle cx="988" cy="72.8" r="4" fill="#0E9AA7" />
+  <circle cx="1045" cy="72.6" r="4.5" fill="#0E9AA7" />
+  <text x="1050" y="75" font-size="9.5" font-weight="700" fill="#0E9AA7">B5 (.929)</text>
+
+  <!-- Callout Box at Bottom of Panel (c) -->
+  <rect x="770" y="177" width="330" height="31" rx="3" fill="#E0F7FA" stroke="#0E9AA7" stroke-width="1" />
+  <text x="777" y="190" font-size="9.2" fill="#1E293B"><tspan font-weight="700" fill="#006064">Page Stability (t → t+1):</tspan> <tspan font-family="monospace" font-weight="700">B5</tspan> loses <tspan font-weight="700" fill="#006064">1 fact</tspan> across cutoffs; 1-call rewrites</text>
+  <text x="777" y="202" font-size="9.2" fill="#1E293B">evict <tspan font-weight="700" fill="#D81B60">10–14</tspan> (<tspan font-family="monospace">B1</tspan>), <tspan font-weight="700" fill="#D81B60">12–14</tspan> (<tspan font-family="monospace">B4</tspan> on same graph), and <tspan font-weight="700" fill="#D81B60">4–24</tspan> (<tspan font-family="monospace">B2</tspan>).</text>
+
+  <!-- ===================================================================== -->
+  <!-- PANEL (d): BOTTOM SPAN - CONTEXT COLLAPSE & GRAPH CONTROL (x:398..1110)-->
+  <!-- ===================================================================== -->
+  <rect x="398" y="225" width="712" height="200" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+  <text x="410" y="246" font-size="13" font-weight="700" fill="#1E293B">(d) RQ4: Statement Truth vs. Page-Context Support & Shared-Graph Control (Original Text)</text>
+
+  <!-- Dumbbell Plot on Left of Panel (d): x=545 (65%) to x=755 (100%) -> 6px per 1% -->
+  <line x1="545" y1="395" x2="755" y2="395" stroke="#94A3B8" />
+  <text x="545" y="408" font-size="9" fill="#64748B" text-anchor="middle">65%</text>
+  <text x="605" y="408" font-size="9" fill="#64748B" text-anchor="middle">75%</text>
+  <text x="665" y="408" font-size="9" fill="#64748B" text-anchor="middle">85%</text>
+  <text x="725" y="408" font-size="9" fill="#64748B" text-anchor="middle">95%</text>
+  <text x="755" y="408" font-size="9" fill="#64748B" text-anchor="middle">100%</text>
+
+  <!-- Row 1: B4 Same Graph (Cast pages, n=200): 96.5% -->
+  <text x="537" y="276" font-size="10" font-weight="700" fill="#6A1B9A" text-anchor="end">B4 Same Graph (n=200)</text>
+  <circle cx="734.0" cy="272" r="4.5" fill="#0E9AA7" />
+  <text x="743" y="276" font-size="9.5" font-weight="700" fill="#6A1B9A">96.5% (91.5% cited)</text>
+
+  <!-- Row 2: B1 Long Context (Cast pages, n=199): 93.0% -->
+  <text x="537" y="304" font-size="10" fill="#1E293B" text-anchor="end">B1 Long Context (n=199)</text>
+  <circle cx="713.0" cy="300" r="4" fill="#0E9AA7" />
+  <text x="722" y="304" font-size="9.5" fill="#475569">93.0% (65.8% cited)</text>
+
+  <!-- Row 3: B5 Cast Character Pages (Matched, n=35): 88.6% -->
+  <text x="537" y="332" font-size="10" fill="#1E293B" text-anchor="end">B5 Cast Pages (n=35)</text>
+  <circle cx="686.6" cy="328" r="4" fill="#0E9AA7" />
+  <text x="695" y="332" font-size="9.5" fill="#0E9AA7" font-weight="700">88.6% (matched cast)</text>
+
+  <!-- Row 4: B5 Whole Artifact (All surfaces, n=199): 78.9% page vs 93.5% statement -->
+  <text x="537" y="360" font-size="10" font-weight="700" fill="#1E293B" text-anchor="end">B5 All Pages (n=199)</text>
+  <line x1="628.4" y1="356" x2="716.0" y2="356" stroke="#D81B60" stroke-width="3" />
+  <circle cx="628.4" cy="356" r="4.5" fill="#0E9AA7" />
+  <circle cx="716.0" cy="356" r="4.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2.2" />
+  <text x="672" y="350" font-size="9" font-weight="700" fill="#D81B60" text-anchor="middle">-14.6 pts</text>
+
+  <!-- Row 5: B5 Relationship Pages (46.3% share, n=102): 70.6% page vs 97.1% statement -->
+  <text x="537" y="386" font-size="10" font-weight="700" fill="#D81B60" text-anchor="end">B5 Pair Pages (n=102)</text>
+  <line x1="578.6" y1="382" x2="737.6" y2="382" stroke="#D81B60" stroke-width="3.5" />
+  <circle cx="578.6" cy="382" r="4.5" fill="#0E9AA7" />
+  <circle cx="737.6" cy="382" r="4.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2.2" />
+  <text x="658" y="376" font-size="9" font-weight="700" fill="#D81B60" text-anchor="middle">-26.5 pts (70.6% vs. 97.1% true)</text>
+
+  <!-- Right Callout Card inside Panel (d) -->
+  <rect x="830" y="258" width="268" height="155" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2" />
+  <circle cx="845" cy="275" r="4.5" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2.2" />
+  <text x="855" y="279" font-size="10" font-weight="700" fill="#1A73E8">True as standalone statement (93.4% B5)</text>
+  <circle cx="845" cy="295" r="4.5" fill="#0E9AA7" />
+  <text x="855" y="299" font-size="10" font-weight="700" fill="#0E9AA7">Supported in page context (M3 scene rule)</text>
+
+  <line x1="840" y1="310" x2="1088" y2="310" stroke="#CBD5E1" />
+  <text x="842" y="327" font-size="10" font-weight="700" fill="#1E293B">Why B4 + B5 Together Prove the Thesis:</text>
+  <text x="842" y="343" font-size="9.3" fill="#334155">• <tspan font-weight="700" fill="#6A1B9A">Graph is accurate:</tspan> On the same graph, <tspan font-family="monospace">B4</tspan></text>
+  <text x="850" y="356" font-size="9.3" fill="#334155">reaches <tspan font-weight="700">0.965</tspan> precision & <tspan font-weight="700">0.915</tspan> citations.</text>
+  <text x="842" y="372" font-size="9.3" fill="#334155">• <tspan font-weight="700" fill="#0E9AA7">8x Token Efficiency:</tspan> <tspan font-family="monospace">B5</tspan> uses <tspan font-weight="700">951</tspan> input tokens</text>
+  <text x="850" y="385" font-size="9.3" fill="#334155">per distinct assertion vs. <tspan font-weight="700">7,604</tspan> for <tspan font-family="monospace">B1</tspan>.</text>
+  <text x="842" y="401" font-size="9.3" fill="#334155">• <tspan font-weight="700" fill="#D81B60">Context collapse:</tspan> 27/30 pair errors are true</text>
+  <text x="850" y="413" font-size="9.3" fill="#334155">chapter lines where pairs share no episode.</text>
+</svg>
